@@ -40,13 +40,18 @@ header{
    transition: .8s;
 }
 
+header h2{
+    color: #fff;
+}
+
 header.rolagem{
     background-color: #fff;
     padding: 20px 4%;
 }
 
 header.rolagem a, 
-header.rolagem i{
+header.rolagem i,
+header.rolagem h2{
     color: #ab49cc;
 }
 
