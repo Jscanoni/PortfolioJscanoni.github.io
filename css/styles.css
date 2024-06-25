@@ -7,6 +7,12 @@
 #a387ac
 #a494a4
 
+*/
+
+/* VARIAVEIS */
+:root{
+    --main-color: #a54afa;
+}
 
 /* GERAL */
 *{
@@ -19,29 +25,14 @@
 html{
     height: 500vh;
 }
-
-.container{
-    max-width: 1280px;
-    margin: auto;
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* HEADER */
 
 header{
     width: 100%;
-    padding: 60px 4%;
+    padding: 50px 4%;
     position: fixed;
-   top: 0;
-   left: 0;
-   transition: .8s;
-}
-
-header h2{
-    color: #fff;
+    transition: .8s;
+    text-align: center;
 }
 
 header.rolagem{
@@ -49,27 +40,16 @@ header.rolagem{
     padding: 20px 4%;
 }
 
-header.rolagem a, 
-header.rolagem i,
-header.rolagem h2{
-    color: #ab49cc;
+header.rolagem a{
+    color: #a54afa;
 }
 
-header i{
-   font-size: 16px;
-   color: #fff; 
-}
-
-header ul{
-    list-style-type: none;
-}
-
-header ul li{
+header li{
     display: inline-block;
     margin: 0 40px;
 }
 
-header ul li a{
+header a{
     color: #fff;
     text-decoration: none;
     transition: .3s;
@@ -77,27 +57,45 @@ header ul li a{
 }
 
 header a:hover{
-    color: #dcdcdc;
+    color: #a54afa;
 }
+
+/* BANNER */
 
 .banner{
     height: 100vh;
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner.jpg); 
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.banner h1{
-    font-size: 4em;
-    text-transform: uppercase;
-    color: #fff;
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-.banner h1 span{
-    color: #ab49cc;
+#title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .description {
+    max-width: 95%;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.highlight {
+    color: var(--main-color);
+  }
+
+#name,
+#title,
+.description{
+    color: #dcdcdc;
 }
