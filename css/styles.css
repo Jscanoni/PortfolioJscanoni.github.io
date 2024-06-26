@@ -1,17 +1,14 @@
 /* 
     CORES USADAS 
 
-#462e4f
-#c4a9ba
-#93788f
-#a387ac
-#a494a4
+roxo #5229da
+preto
 
 */
 
 /* VARIAVEIS */
 :root{
-    --main-color: #a54afa;
+    --main-color: #5229da;
 }
 
 /* GERAL */
@@ -25,39 +22,47 @@
 html{
     height: 500vh;
 }
+
+body{
+   background:  #1a1822;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+
+}
 /* HEADER */
 
 header{
     width: 100%;
-    padding: 50px 4%;
+    padding: 3rem 4%;
     position: fixed;
     transition: .8s;
     text-align: center;
 }
 
 header.rolagem{
-    background-color: #fff;
-    padding: 20px 4%;
+    background-color: var(--main-color);
+    padding: 1.5rem 4%;
 }
 
 header.rolagem a{
-    color: #a54afa;
+    color: #fff;
 }
 
 header li{
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 2.5rem;
 }
 
 header a{
     color: #fff;
     text-decoration: none;
     transition: .3s;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 header a:hover{
-    color: #a54afa;
+    color: #9d9d9d;
 }
 
 /* BANNER */
@@ -74,20 +79,20 @@ header a:hover{
 }
 
 #name {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
 }
 
 #title {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
     font-weight: bold;
   }
   
   .description {
     max-width: 95%;
-    margin-bottom: 10px;
-    font-size: 17px;
+    margin-bottom: .6rem;
+    font-size: 1rem;
 }
 
 .highlight {
@@ -99,3 +104,100 @@ header a:hover{
 .description{
     color: #dcdcdc;
 }
+
+/* container card */
+.container-card{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container-card .custom-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 90%;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
+}
+
+.container-card .custom-card:hover{
+    height: 350px;
+}
+
+.container-card .custom-card .img-box{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-card .custom-card:hover .img-box{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba rgba(0, 0, 0, 0.2);
+}
+
+.container-card .custom-card .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-card .custom-card .custom-content{
+    position: absolute;
+    top: 255px;
+    width: 100%;
+    height: 25px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-card .custom-card:hover .custom-content{
+    top: 130px;
+    height: 250px;
+}
+
+.container-card .custom-card .custom-content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.container-card .custom-card .custom-content p{
+    color: #333;
+}
+
+.container-card .custom-card .custom-content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #181818;
+    color: #fff;
+    font-weight: 500;
+}
+
+.container-card .custom-card .custom-content a:hover{
+    opacity: 0.8;
+}
+
+
